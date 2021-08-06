@@ -1,0 +1,280 @@
+.body__input {
+    display: none;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+.content {
+    width: 1100px;
+    padding: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #e8dfd9;
+    color: black;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.content__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__title {
+    flex: 1;
+    font-size: 450%;
+    text-transform: uppercase;
+    font-family: 'Lobster';
+    margin: 0;
+    margin-top: 0.3em;
+}
+
+.header__menu {
+    display: flex;
+    flex: 0.25;
+    flex-direction: column;
+    align-items: start;
+    font-size: 90%;
+    gap: 1em;
+    font-family: Arial, sans-serif;
+    align-self: center;
+}
+
+.header__menu-item {
+    list-style: none;
+    font-family: 'Roboto Mono';
+
+}
+
+.content__info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-family: 'Roboto Mono';
+    font-size: 110%;
+}
+
+.content__weather, .content__exchange, .content__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.content__logo {
+    height: 100px;
+    width: 550px;
+    object-fit: cover;
+}
+
+.line {
+    border-top: 1px solid  #337AB7;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.content__date {
+    letter-spacing: 12px;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+.page {
+    display: grid;
+    width: 1100px;
+    grid-template-areas: 'main main navigation'
+                         'main main cats'
+                         'main main cats';
+    grid-gap: 1em;
+}
+
+
+.content__main-title {
+    font-size: 450%;
+    text-align: center;
+    margin-bottom: 0.2em;
+    font-family: 'Oswald';
+    letter-spacing: 5px;
+}
+.content__main-subtitle {
+    font-size: 200%;
+    text-transform: uppercase;
+    text-align: justify;
+    margin: 0.2em;
+
+}
+
+.content__main-photo {
+    grid-area: photo;
+    float: left;
+    margin-bottom: 1em;
+}
+
+.content__main-photo img {
+    width: 200px;
+    height: 400px;
+    float: left;
+    object-fit: cover;
+}
+
+.content__main-text {
+    column-count: 4;
+    grid-area: text;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.content__main-text::first-letter {
+    font-weight: bold;
+}
+
+.content__main {
+    grid-area: main;
+}
+
+
+.cats__gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.content__navigation {
+    grid-area: navigation;
+    border-left: 1px solid  #337AB7;
+    padding: 1em;;
+    flex: 1;
+}
+
+.navigation__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.navigation__text-item .text {
+    margin: 0;
+}
+
+.navigation__title {
+    text-align: center;
+    font-size: 160%;
+    
+}
+.navigation__text-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 110%;
+}
+
+.content__cats {
+    grid-area: cats;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.cats__title {
+    font-size: 170%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content__cats .text {
+    font-size: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 1em;
+    margin: 0em;
+}
+
+.cats__gallery-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.heder__size-label.small {
+    font-size: 80%;
+}
+.heder__size-label.medium {
+    font-size: 100%;
+}
+.heder__size-label.large {
+    font-size: 120%;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#dark:checked ~ .content {
+    background-color: #172026;
+    color: white; 
+}
+
+#font-style:checked ~ .content {
+    font-family: 'Yeseva One';
+}
+
+#font-style:checked ~ .content .header__title {
+    font-family: 'Comfortaa';
+    font-size: 390%;
+    margin-top: 0.5em;
+}
+
+#font-style:checked ~ .content .header__menu,
+#font-style:checked ~ .content .content__info, 
+#font-style:checked ~.content .content__date {
+    font-weight: bold;
+}
+
+#small:checked ~ .content {
+    font-size: 15px;
+}
+
+#medium:checked ~ .content {
+    font-size: 16px;
+}
+
+#large:checked ~ .content {
+    font-size: 17px;
+}
+
+.blockquote p {
+    margin: 0;
+}
+
+.blockquote {
+    border: 2px solid #337AB7;
+    font-size: 140%;
+    font-style: italic;
+    margin: 16px 31px 31px 16px;
+    padding: 16px 24px;
+    position: relative;
+    box-shadow: 15px 15px 0 0 #337AB7;  
+}
+.blockquote cite {
+    color: #337AB7;
+    font-size: 80%;
+    padding-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+.quote__title {
+    font-size: 150%;
+    text-align: center;
+}

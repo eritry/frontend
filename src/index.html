@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+    <title>Копейский рабочий</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <input class="body__input" type="radio" name="font-size" id="small">
+    <input class="body__input" type="radio" name="font-size" id="medium" checked>
+    <input class="body__input" type="radio" name="font-size" id="large">
+    <input class="body__input" type="checkbox" name="theme" id="dark">
+    <input class="body__input" type="checkbox" name="font-style" id="font-style">
+
+    <main class="content">
+        <header class="content__header">
+            <h1 class="header__title">Копейский рабочий</h1>
+
+            <menu class="header__menu">
+                <li class="header__menu-item">
+                    Размер шрифта: 
+                    <label class="heder__size-label small" for="small">Аа</label>
+                    <label class="heder__size-label medium" for="medium">Аа</label>
+                    <label class="heder__size-label large" for="large">Аа</label>
+                </li>
+                <li class="header__menu-item">
+                    <label class="header__color-label" for="dark">Инвертировать тему</label>
+                </li>
+                <li class="header__menu-item">
+                    <label class="header__color-label" for="font-style">Изменить стиль шрифта</label>
+                </li>
+            </menu>
+        </header>
+
+        <div class="line"></div>
+
+        <div class="content__info">
+            <div class="content__weather">
+                <div class="content__weather-forecast">
+                    <p class="text">Челябинск</p>
+                    <p class="text">+1C&deg;</p>
+                </div>
+
+                <div class="content__weather-forecast">
+                    <p class="text">Магнитогорск</p>
+                    <p class="text">-1C&deg;</p>
+                </div>
+
+                <div class="content__weather-forecast">
+                    <p class="text">Копейск</p>
+                    <p class="text">-3C&deg;</p>
+                </div>
+            </div>
+
+            <img class="content__logo" src="../static/headjpg.jpg" alt="Напечатанные газеты">
+
+            <div class="content__exchange">
+                <div class="content__exchange-rates">
+                    <p class="text">USD</p>
+                    <p class="text">80,61&#8381;</p>
+                </div>
+
+                <div class="content__weather-forecast">
+                    <p class="text">EUR</p>
+                    <p class="text">93,75&#8381;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="content__date">03 ноября 2020, вторник</div>
+
+        <div class="line"></div>
+
+        <div class="content__quote">
+            <div class="quote__title"> Цитата дня </div>
+            <blockquote class="blockquote">
+                <p>Учитесь, пока другие спят, работайте, пока другие отдыхают, 
+                    будьте готовы, пока другие расслабляются и мечтайте, пока другие плачутся.</p>
+                <cite>Уильям Артур Уорд</cite>
+            </blockquote>
+        </div>
+
+        <div class="page">
+            <div class="content__main">
+                <div class="content__main-title"> А что, так можно было?</div>
+                <div class="content__main-subtitle">Маленькую уральскую газету 
+                    «Копейский рабочий» читают звезды Голливуда. <br> Как это произошло?
+                </div>
+                <div class="content__main-text">
+
+                    <div class="content__main-photo">
+                        <img class="main-photo" src="../static/main.jpg" alt="Джонни Депп">
+                    </div>
+
+                    Не&shy;по&shy;да&shy;ле&shy;ку от Че&shy;ля&shy;бин&shy;ска есть шах&shy;тер&shy;ский го&shy;ро&shy;док Ко&shy;пей&shy;ск с на&shy;се&shy;ле&shy;ни&shy;ем 
+                    око&shy;ло 150 ты&shy;сяч че&shy;ло&shy;век. В 2013 го&shy;ду в мест&shy;ной га&shy;зе&shy;те «Ко&shy;пей&shy;ский ра&shy;бо&shy;чий» 
+                    на&shy;ча&shy;ли по&shy;яв&shy;лять&shy;ся фо&shy;то&shy;гра&shy;фии гол&shy;ли&shy;вуд&shy;ских зна&shy;ме&shy;ни&shy;тос&shy;тей, с ин&shy;те&shy;ре&shy;сом чи&shy;та&shy;ю&shy;щих 
+                    вы&shy;пус&shy;ки это&shy;го са&shy;мо&shy;го му&shy;ни&shy;ци&shy;паль&shy;но&shy;го из&shy;да&shy;ния. При&shy;чем фо&shy;то бы&shy;ли на&shy;сто&shy;я&shy;щие. 
+                    Джон&shy;ни Депп, Ни&shy;коль Кид&shy;ман, Мэтт Дей&shy;мон, Анд&shy;же&shy;ли&shy;на Джо&shy;ли и дру&shy;гие звез&shy;ды 
+                    дейст&shy;ви&shy;тель&shy;но дер&shy;жа&shy;ли в ру&shy;ках но&shy;ме&shy;ра ко&shy;пей&shy;ской го&shy;род&shy;ской га&shy;зе&shy;ты. Во&shy;прос в том,
+                    как они узна&shy;ли о ее су&shy;щест&shy;во&shy;ва&shy;нии и за&shy;чем им это нуж&shy;но. «Лен&shy;та.ру» по&shy;го&shy;во&shy;ри&shy;ла 
+                    с Ан&shy;ной Ви&shy;ка&shy;люк, глав&shy;ным ре&shy;дак&shy;то&shy;ром не&shy;боль&shy;шо&shy;го ураль&shy;ско&shy;го из&shy;да&shy;ния, ко&shy;то&shy;рое 
+                    в од&shy;но&shy;часье ста&shy;ло из&shy;вест&shy;ным на весь мир, и вы&shy;яс&shy;ни&shy;ла, что без по&shy;ли&shy;ти&shy;ки здесь 
+                    не обо&shy;шлось.
+                    <br>
+                    Ан&shy;на Ви&shy;ка&shy;люк: У нас в Ко&shy;пей&shy;ске жи&shy;ла Мар&shy;га&shy;ри&shy;та Суш&shy;ке&shy;вич. 
+                    Она пе&shy;ре&shy;еха&shy;ла в Аме&shy;ри&shy;ку и вы&shy;шла за&shy;муж за про&shy;дю&shy;се&shy;ра гол&shy;ли&shy;вуд&shy;ских филь&shy;мов 
+                    Дже&shy;ка Тьюк&shy;с&shy;бе&shy;ри (Jack Tewksbury). Пе&shy;ри&shy;о&shy;ди&shy;чес&shy;ки Мар&shy;га&shy;ри&shy;та при&shy;ез&shy;жа&shy;ла на ро&shy;ди&shy;ну,
+                    у нее здесь оста&shy;лись род&shy;ные и друзья. В ре&shy;дак&shy;ции она ни&shy;ког&shy;да не ра&shy;бо&shy;та&shy;ла, но, 
+                    как и все ко&shy;пей&shy;ча&shy;не, зна&shy;ла га&shy;зе&shy;ту, да&shy;же дру&shy;жи&shy;ла с кем-то из жур&shy;на&shy;лис&shy;тов. В один
+                    из оче&shy;ред&shy;ных при&shy;ез&shy;дов Мар&shy;га&shy;ри&shy;та увез&shy;ла с со&shy;бой в США стоп&shy;ку но&shy;ме&shy;ров «Ко&shy;пей&shy;ско&shy;го
+                    ра&shy;бо&shy;че&shy;го» — и все за&shy;вер&shy;те&shy;лось. Од&shy;на&shy;ко и до это&shy;го Мар&shy;га&shy;ри&shy;та вмес&shy;те с Дже&shy;ком 
+                    пред&shy;ла&shy;га&shy;ли на&shy;ше&shy;му из&shy;да&shy;нию эксклю&shy;зив&shy;ные ко&shy;рот&shy;кие ин&shy;тервью со звез&shy;да&shy;ми. Та&shy;ким
+                    об&shy;ра&shy;зом они пла&shy;ни&shy;ро&shy;ва&shy;ли про&shy;дви&shy;гать в Рос&shy;сии филь&shy;мы, ко&shy;то&shy;рые про&shy;дю&shy;си&shy;ро&shy;вал Джек. 
+                    <br>
+                    Мне нра&shy;вит&shy;ся са&shy;мая пер&shy;вая пар&shy;тия, с Джон&shy;ни Деп&shy;пом. Она пе&shy;ча&shy;та&shy;лась еще до мо&shy;е&shy;го 
+                    при&shy;хо&shy;да в из&shy;да&shy;ние. Ког&shy;да я ста&shy;ла глав&shy;ным ре&shy;дак&shy;то&shy;ром, при&shy;шли фо&shy;то&shy;гра&shy;фии с Мэт&shy;том 
+                    Леб&shy;ла&shy;ном — и я прос&shy;то обал&shy;де&shy;ла. «Друзья» — мой лю&shy;би&shy;мей&shy;ший се&shy;ри&shy;ал, я его раз 15 
+                    пе&shy;ре&shy;смат&shy;ри&shy;ва&shy;ла. Я да&shy;же вскрик&shy;ну&shy;ла от ра&shy;дос&shy;ти, ког&shy;да уви&shy;де&shy;ла его с на&shy;шей га&shy;зе&shy;той 
+                    в ру&shy;ках. По&shy;ду&shy;ма&shy;лось: «А так мож&shy;но бы&shy;ло?» Не&shy;ве&shy;ро&shy;ят&shy;ные эмо&shy;ции бук&shy;валь&shy;но у всех 
+                    чи&shy;та&shy;те&shy;лей вы&shy;звал Дже&shy;ки Чан.
+                    <br>
+                    Уди&shy;ви&shy;тель&shy;но бы&shy;ло ви&shy;деть с рос&shy;сий&shy;ским из&shy;да&shy;ни&shy;ем в ру&shy;ках улы&shy;ба&shy;ю&shy;ще&shy;го&shy;ся Мор&shy;га&shy;на Фри&shy;ме&shy;на, 
+                    ко&shy;то&shy;рый по&shy;след&shy;ние не&shy;сколь&shy;ко лет из&shy;вес&shy;тен кри&shy;ти&shy;чес&shy;ки&shy;ми вы&shy;ска&shy;зы&shy;ва&shy;ни&shy;я&shy;ми в ад&shy;рес Рос&shy;сии.
+                    По иро&shy;нии судь&shy;бы, он сфо&shy;то&shy;гра&shy;фи&shy;ро&shy;вал&shy;ся с но&shy;ме&shy;ром к 23 фев&shy;ра&shy;ля — «ми&shy;ли&shy;та&shy;рист&shy;ско&shy;му» 
+                    празд&shy;ни&shy;ку. Не факт, что он по&shy;ни&shy;мал, что он дер&shy;жит в ру&shy;ках.
+                </div>
+            </div>
+                <div class="content__right">
+                <div class="content__navigation">
+                    <div class="navigation__title">Читайте в этом выпуске:</div>
+                    <div class="navigation__text">
+                        <div class="navigation__text-item">
+                            <p class="text">Коронавирус: последние новости</p>
+                            <p class="text">стр. 2</p>
+                        </div>
+                        <div class="navigation__text-item">
+                            <p class="text">Ловушка в квитанции: как заставляют платить за ЖКХ больше</p>
+                            <p class="text">стр. 2</p>
+                        </div>
+                        <div class="navigation__text-item">
+                            <p class="text">Анонсы развлекательных мероприятий на день народного единства</p>
+                            <p class="text">стр. 3</p>
+                        </div>
+                    </div>
+
+                <div class="line"></div>
+                <div class="content__cats">
+                    <div class="cats__title">Приют для животных "Преданное сердце" пристраивает котят</div>
+                    <div class="cats__gallery">
+                        <div class="cats__gallery-item">
+                            <img class="cats-photo" src="../static/cat2.jpg" alt="Боря">
+                            <p class="text">Б о р я</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    </main>
+  </body>
+</html>
